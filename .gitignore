@@ -20,8 +20,8 @@
 !/.config/rofi/
 !/.config/install.sh
 
-#VSCode
+#DEV Stuff
 !/.config/Code/User/keybindings.json
 !/.config/Code/User/settings.json
-
+!/.config/nvim/
 
