@@ -5,12 +5,12 @@
 !/README.md
 !/.Xresources
 !/.zshrc
-!/.gitconfig
 
 #MINDBLOWIND TRICKS
 !/.config
 /.config/*
 !/.gitignore
+!/.gitconfig
 
 #Let's add some cool stuff
 !/.config/compton.conf
@@ -19,3 +19,9 @@
 !/.config/polybar/
 !/.config/rofi/
 !/.config/install.sh
+
+#VSCode
+!/.config/Code/User/keybindings.json
+!/.config/Code/User/settings.json
+
+
