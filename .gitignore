@@ -1,0 +1,20 @@
+# Let's exclude everything
+/*
+
+#GLOBAL STYLE & terminal
+!/README.md
+!/.Xresources
+!/.zshrc
+
+#MINDBLOWIND TRICKS
+!/.config
+/.config/*
+!/.gitignore
+
+#Let's add some cool stuff
+!/.config/compton.conf
+!/.config/i3/
+!/.config/neofetch/
+!/.config/polybar/
+!/.config/rofi/
+!/.config/install.sh
