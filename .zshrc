@@ -62,7 +62,7 @@ ZSH_THEME="alanpeabody"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=( git )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -120,4 +120,26 @@ source /usr/share/nvm/bash_completion
 source /usr/share/nvm/install-nvm-exec
 
 compinit
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Mujoco for PySC2 - DeepMind 
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/nelth/.mujoco/mujoco200/bin
+
+#Multitread compression
+alias grep='grep --color=auto'
+alias ll='ls -l --color=auto'
+alias llh='ls -lh --color=auto'
+alias l.='ls -d .* --color=auto'
+alias ls='ls --color=auto'
+
+
+#Do compression with all cores !!
+alias gzip='pigz'
+alias gunzip='unpigz'
+alias bzip2='pbzip2'
+alias bunzip2='pbunzip2'
+alias bzcat='pbzcat'
+alias xz='pxz'
+
+
 
