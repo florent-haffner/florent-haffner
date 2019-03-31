@@ -10,7 +10,6 @@
 !/.config
 /.config/*
 !/.gitignore
-!/.gitconfig
 
 #Let's add some cool stuff
 !/.config/compton.conf
