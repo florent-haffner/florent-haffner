@@ -18,10 +18,9 @@
 !/.config/neofetch/
 !/.config/polybar/
 !/.config/rofi/
+!/.config/ranger/
 !/.config/install.sh
 
 #DEV Stuff
-!/.config/Code/User/keybindings.json
-!/.config/Code/User/settings.json
 !/.config/nvim/
 
