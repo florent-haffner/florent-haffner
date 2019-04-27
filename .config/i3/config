@@ -3,7 +3,7 @@
 # I3 CONFIG FILE #
 ##################
 
-set $mod Mod1
+set $mod Mod4
 
 new_window pixel 1
 new_float normal
@@ -20,7 +20,9 @@ floating_modifier $mod
 
 
 # start a console
-bindsym $mod+Shift+Return exec i3-sensible-terminal
+bindsym $mod+Return exec i3-sensible-terminal
+
+bindsym $mod+e exec i3-sensible-terminal -e ranger
 
 # Window kill command
 bindsym $mod+w kill
