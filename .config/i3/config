@@ -4,31 +4,26 @@
 ##################
 
 set $mod Mod4
+set $alt Mod1
 
 new_window pixel 1
 new_float normal
 
 hide_edge_borders none
-
-#bindsym $mod+u border none
-#bindsym $mod+y border pixel 1
-#bindsym $mod+n border normal
-
 font xft:URWGothic-Book 11
-
 floating_modifier $mod
-
 
 # start a console
 bindsym $mod+Return exec i3-sensible-terminal
 
+# starting ranger
 bindsym $mod+e exec i3-sensible-terminal -e ranger
 
 # Window kill command
 bindsym $mod+w kill
 
 # start program launcher
-bindsym $mod+space exec rofi -show drun -theme solarized-darker
+bindsym $alt+space exec rofi -show drun -theme solarized-darker
 
 
 # change focus
@@ -38,10 +33,10 @@ bindsym $mod+space exec rofi -show drun -theme solarized-darker
 #bindsym $mod+semicolon focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $alt+Shift+j move left
+bindsym $alt+Shift+k move down
+bindsym $alt+Shift+l move up
+bindsym $alt+Shift+semicolon move right
 
 
 # workspace back and forth (with/without active container)
@@ -56,8 +51,10 @@ bindsym $mod+v split v;exec notify-send 'tile vertically'
 
 # toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
+#
 # focus the parent container
-#bindsym $mod+a focus parent
+bindsym $mod+a focus parent
+
 
 # move the currently focused window to the scratchpad
 #bindsym $mod+Shift+minus move scratchpad
@@ -78,34 +75,34 @@ set $ws7 7
 set $ws8 8
 
 # switch to workspace
-bindsym $mod+1 workspace $ws1
-bindsym $mod+2 workspace $ws2
-bindsym $mod+3 workspace $ws3
-bindsym $mod+4 workspace $ws4
-bindsym $mod+5 workspace $ws5
-bindsym $mod+6 workspace $ws6
-bindsym $mod+7 workspace $ws7
-bindsym $mod+8 workspace $ws8
+bindsym $alt+1 workspace $ws1
+bindsym $alt+2 workspace $ws2
+bindsym $alt+3 workspace $ws3
+bindsym $alt+4 workspace $ws4
+bindsym $alt+5 workspace $ws5
+bindsym $alt+6 workspace $ws6
+bindsym $alt+7 workspace $ws7
+bindsym $alt+8 workspace $ws8
 
 # Move focused container to workspace
-bindsym $mod+Ctrl+1 move container to workspace $ws1
-bindsym $mod+Ctrl+2 move container to workspace $ws2
-bindsym $mod+Ctrl+3 move container to workspace $ws3
-bindsym $mod+Ctrl+4 move container to workspace $ws4
-bindsym $mod+Ctrl+5 move container to workspace $ws5
-bindsym $mod+Ctrl+6 move container to workspace $ws6
-bindsym $mod+Ctrl+7 move container to workspace $ws7
-bindsym $mod+Ctrl+8 move container to workspace $ws8
+bindsym $alt+Ctrl+1 move container to workspace $ws1
+bindsym $alt+Ctrl+2 move container to workspace $ws2
+bindsym $alt+Ctrl+3 move container to workspace $ws3
+bindsym $alt+Ctrl+4 move container to workspace $ws4
+bindsym $alt+Ctrl+5 move container to workspace $ws5
+bindsym $alt+Ctrl+6 move container to workspace $ws6
+bindsym $alt+Ctrl+7 move container to workspace $ws7
+bindsym $alt+Ctrl+8 move container to workspace $ws8
 
 # Move to workspace with focused container
-bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
-bindsym $mod+Shift+2 move container to workspace $ws2; workspace $ws2
-bindsym $mod+Shift+3 move container to workspace $ws3; workspace $ws3
-bindsym $mod+Shift+4 move container to workspace $ws4; workspace $ws4
-bindsym $mod+Shift+5 move container to workspace $ws5; workspace $ws5
-bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
-bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
-bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
+bindsym $alt+Shift+1 move container to workspace $ws1; workspace $ws1
+bindsym $alt+Shift+2 move container to workspace $ws2; workspace $ws2
+bindsym $alt+Shift+3 move container to workspace $ws3; workspace $ws3
+bindsym $alt+Shift+4 move container to workspace $ws4; workspace $ws4
+bindsym $alt+Shift+5 move container to workspace $ws5; workspace $ws5
+bindsym $alt+Shift+6 move container to workspace $ws6; workspace $ws6
+bindsym $alt+Shift+7 move container to workspace $ws7; workspace $ws7
+bindsym $alt+Shift+8 move container to workspace $ws8; workspace $ws8
 
 
 # Open specific applications in floating mode
@@ -142,10 +139,10 @@ for_window [class="Xfburn"] floating enable
 for_window [urgent=latest] focus
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $alt+Shift+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $alt+Shift+r restart
 
 
 # exit i3 (logs you out of your X session)
@@ -154,7 +151,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # Set shut down, restart and locking features
 bindsym $mod+0 mode "$mode_system"
-set $mode_system (l)ock, (s)uspend, (h)ibernate, (r)eboot, (p)hutdown
+set $mode_system (l)ock, (s)uspend, (h)ibernate, (r)eboot, (p)shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id i3lock -c 171717, mode "default"
     bindsym s exec --no-startup-id systemctl suspend && i3lock -c 171717, mode "default"
