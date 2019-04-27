@@ -4,5 +4,4 @@ TODO :
 https://github.com/robbyrussell/oh-my-zsh/
 https://github.com/syl20bnr/spacemacs
 
-
-
+Arch linux /home configuration
