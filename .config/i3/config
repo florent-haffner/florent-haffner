@@ -48,9 +48,10 @@ bindsym $alt+Shift+semicolon move right
 bindsym $mod+h split h;exec notify-send 'tile horizontally'
 bindsym $mod+v split v;exec notify-send 'tile vertically'
 
+
 # toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
-
+#
 # focus the parent container
 bindsym $mod+a focus parent
 
@@ -165,7 +166,7 @@ mode "$mode_system" {
 
 
 # Resize window (you can also use the mouse for that)
-bindsym $alt+r mode "resize"
+bindsym $mod+r mode "resize"
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
         # Pressing left will shrink the window’s width.
