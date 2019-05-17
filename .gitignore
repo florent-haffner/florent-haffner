@@ -15,9 +15,11 @@
 !/.config/compton.conf
 !/.config/i3/
 !/.config/neofetch/
+!/.config/autostart
 !/.config/polybar/
 !/.config/rofi/
 !/.config/ranger/
+!/.config/redshift.sh
 !/.config/install.sh
 
 #DEV Stuff
