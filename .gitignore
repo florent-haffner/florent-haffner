@@ -11,6 +11,9 @@
 /.config/*
 !/.gitignore
 
+#BudgieWM
+!.budgie-backup
+
 #Let's add some cool stuff
 !/.config/compton.conf
 !/.config/i3/

@@ -1,0 +1,74 @@
+[budgie-panel]
+confirm-remove-applet=false
+dark-theme=true
+migration-level=1
+panels=['fba45060-7eea-11e9-ae3a-708bcd571485', 'c751563e-3799-11e9-9720-708bcd571485']
+
+[budgie-panel/applets/{3ea7f998-7eeb-11e9-ae3a-708bcd571485}]
+alignment='end'
+name='Raven Trigger'
+position=3
+
+[budgie-panel/applets/{48c49a62-7eeb-11e9-ae3a-708bcd571485}]
+alignment='end'
+name='System Tray'
+position=0
+
+[budgie-panel/applets/{50fe9c1e-7eeb-11e9-ae3a-708bcd571485}]
+alignment='center'
+name='Workspace Switcher'
+position=0
+
+[budgie-panel/applets/{5629fcec-7eeb-11e9-ae3a-708bcd571485}]
+alignment='end'
+name='Clock'
+position=1
+
+[budgie-panel/applets/{7ca599a8-7eeb-11e9-ae3a-708bcd571485}]
+alignment='end'
+name='User Indicator'
+position=2
+
+[budgie-panel/applets/{d7ada17c-3799-11e9-9720-708bcd571485}]
+alignment='start'
+name='Icon Task List'
+position=0
+
+[budgie-panel/applets/{fe642596-7eea-11e9-ae3a-708bcd571485}]
+alignment='start'
+name='Budgie Menu'
+position=0
+
+[budgie-panel/instance/budgie-menu/{fe642596-7eea-11e9-ae3a-708bcd571485}]
+menu-categories-hover=true
+menu-headers=true
+menu-icon='/home/nelth/Pictures/Icons/arch.png'
+
+[budgie-panel/instance/icon-tasklist/{d7ada17c-3799-11e9-9720-708bcd571485}]
+pinned-launchers=['org.gnome.Nautilus.desktop', 'firefox.desktop', 'spotify.desktop', 'jetbrains-pycharm.desktop', 'jetbrains-idea.desktop', 'com.gexperts.Tilix.desktop']
+
+[budgie-panel/panels/{c751563e-3799-11e9-9720-708bcd571485}]
+applets=['d7ada17c-3799-11e9-9720-708bcd571485']
+autohide='intelligent'
+dock-mode=true
+location='bottom'
+size=49
+transparency='none'
+
+[budgie-panel/panels/{fba45060-7eea-11e9-ae3a-708bcd571485}]
+applets=['5629fcec-7eeb-11e9-ae3a-708bcd571485', '7ca599a8-7eeb-11e9-ae3a-708bcd571485', '3ea7f998-7eeb-11e9-ae3a-708bcd571485', '50fe9c1e-7eeb-11e9-ae3a-708bcd571485', 'fe642596-7eea-11e9-ae3a-708bcd571485', '48c49a62-7eeb-11e9-ae3a-708bcd571485']
+location='top'
+size=35
+transparency='none'
+
+[budgie-raven]
+show-calendar-widget=true
+show-mic-input-widget=false
+
+[budgie-wm]
+button-layout='appmenu:minimize,maximize,close'
+button-style='traditional'
+caffeine-mode=false
+caffeine-mode-toggle-brightness=false
+center-windows=true
+focus-mode=true

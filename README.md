@@ -2,6 +2,8 @@
 
 TODO :
 https://github.com/robbyrussell/oh-my-zsh/
-https://github.com/syl20bnr/spacemacs
+
+# Loading Budgie dotfile
+dconf load /com/solus-project/ < budgie-backup
 
 Arch linux /home configuration
