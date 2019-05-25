@@ -35,5 +35,6 @@ fi
 
 
 #exec i3
-exec startdde
 
+export XDG_CURRENT_DESKTOP=Budgie:GNOME
+exec budgie-desktop
