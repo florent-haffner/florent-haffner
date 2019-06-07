@@ -33,4 +33,6 @@ fi
 
 # Starting Budgie /w Xorg
 export XDG_CURRENT_DESKTOP=Budgie:GNOME
+export XDG_SESSION_TYPE=x11
 exec budgie-desktop
+
