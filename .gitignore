@@ -13,6 +13,7 @@
 
 #BudgieWM
 !.budgie-backup
+!.zshrc
 
 #Let's add some cool stuff
 !/.config/compton.conf

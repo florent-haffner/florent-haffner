@@ -1,5 +1,4 @@
 #!/bin/sh
-
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
@@ -25,7 +24,6 @@ fi
 
 
 # start some nice programs
-
 if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
   [ -x "$f" ] && . "$f"
@@ -33,3 +31,6 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+# Starting Budgie /w Xorg
+export XDG_CURRENT_DESKTOP=Budgie:GNOME
+exec budgie-desktop
