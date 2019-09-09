@@ -12,14 +12,11 @@
 !/.gitignore
 
 #BudgieWM
-!.budgie-backup
 !.zshrc
 
 #Let's add some cool stuff
 !/.config/compton.conf
 !/.config/i3/
-!/.config/neofetch/
-!/.config/autostart
 !/.config/polybar/
 !/.config/rofi/
 !/.config/ranger/
