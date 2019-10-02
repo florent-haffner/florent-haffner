@@ -1,3 +1,8 @@
+"Colors
+set t_Co=256
+set background=dark
+set termguicolors
+
 set number relativenumber
 set numberwidth=1
 
@@ -15,6 +20,7 @@ set autoindent                " always set autoindenting on
 set copyindent                " copy Indentation
 
 "File settings
+
 set nobackup		" do not keep a backup file, use versions instead
 set autoread
 set encoding=utf-8
@@ -44,6 +50,8 @@ Plug 'Shougo/neoinclude.vim' "also check completion in includes
 
 Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] , 'do' : 'npm install' }
 Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'dart-lang/dart-vim-plugin' " Dart completion
+Plug 'sirtaj/vim-openscad' " openscad
 
 "Behavior
 Plug 'Townk/vim-autoclose' "autclose brackets
@@ -71,6 +79,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'miyakogi/seiya.vim' "background transparent again
 Plug 'kovetskiy/sxhkd-vim'
+Plug 'LnL7/vim-nix' "nix vim syntax
 
 "Themes
 Plug 'chriskempson/base16-vim'
@@ -124,16 +133,24 @@ nnoremap Q <nop> "Disable annoying EX mode
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
 "tab nav with shift
-nnoremap <C-J> gT
-nnoremap <C-K> gt
-nnoremap <C-H> :tabm -1<CR>
-nnoremap <C-L> :tabm +1<CR>
+nnoremap <C-j> gT
+nnoremap <C-k> gt
+nnoremap <C-h> :tabm -1<CR>
+nnoremap <C-l> :tabm +1<CR>
 nnoremap tn :tabnew<CR>
 nnoremap tq :tabclose<CR>
+"splits
+nnoremap <A-h> <C-w>h
+nnoremap <A-j> <C-w>j
+nnoremap <A-k> <C-w>k
+nnoremap <A-l> <C-w>l
 
 "Quick edit init.vim
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>w :w<cr>
+nnoremap <leader>q :q<cr>
+nnoremap <leader>Q :q!<cr>
 
 "Augroup
 augroup AutoGroup
@@ -151,4 +168,3 @@ augroup Binary
     au BufWritePost *.bin if &bin | %!xxd
     au BufWritePost *.bin set nomod | endif
 augroup END
-
