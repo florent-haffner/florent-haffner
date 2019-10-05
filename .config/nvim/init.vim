@@ -1,50 +1,88 @@
-"Colors
-set t_Co=256
-set background=dark
-set termguicolors
+"
+" VIM dotfiles
+"
 
-set number relativenumber
-set numberwidth=1
+"
+" BASE
+"
+set wildmenu " Display all matching files when the tab complete
+set hlsearch " highlight search
 
-set hlsearch "highlight search
-set ignorecase "not case sensitive
-set smartcase "case smart
+set shiftwidth=4  " tab indent size
+set softtabstop=4 " insert tab
 
-"set foldmethod=syntax
-"set clipboard=unnamedplus
-set mouse=ni
+set ignorecase    " not case sensitive
+set smartcase     " case smart
 
-"Indent settings
 
-set autoindent                " always set autoindenting on
-set copyindent                " copy Indentation
+"
+" FILE-BROWSING
+"
+set path+=** " Search down into subfolder
+" :find to search trough files
+" :find *.cpp for every cpp files
+"
+noremap <C-n> :NERDTreeToggle<CR>              " NERDTree
+let g:SuperTabDefaultCompletionType = "<c-n>"  " Autocomplete
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+let g:netrw_banner=0                           " Disable annoying banner
+let g:netrw_browse_split=4                     " Open a prior window
+let g:netrw_altv=1                             " Opensplits to the right
+let g:netrw_liststyle=3                        " Tree view
+let g:netrw_list_hide=netrw_gitignore#Hide()
+let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
+"
+" :edit a folder to open a file browser
+"  <CR>/v/t to open in an h-split/v-split/tab
+"  Check |netrw_browse_maps| for more mapping
 
-"File settings
 
-set nobackup		" do not keep a backup file, use versions instead
-set autoread
-set encoding=utf-8
-set fileencoding=utf-8 "write
-set fileencodings=utf-8 "read
-set bomb "unicode header
-set binary "warning disable expandtab if set after
+"
+" TAGS
+"
+" Don't forget to create MakeTags files
+command! MakeTags !ctags -R .
+" Ctags help
+" Use ^] to jump to tag under cursor
+" Use g^] for ambiguous tags
+" Use ^t to jump back up the tag stack
 
-"Tabs settings
 
-set shiftwidth=4 "tab indent size
-" set tabstop=4 "tab display
-set softtabstop=4 "insert tab
-" set expandtab "tabs are space
+"
+" AUTO-COMPLETE
+"
+" Use ^n OR ^p to go back and forth in the suggestion list
+"
+" ^x^n for JUST this file
+" ^x^f for filenames (works with path tricks
+" ^x^] for tags only
 
+"
+" TAB-NAVIGATION (/w Shift)
+"
+nnoremap <C-j> gT
+nnoremap <C-k> gt
+nnoremap <C-h> :tabm -1<CR>
+nnoremap <C-l> :tabm +1<CR>
+nnoremap tan :tabnew<CR>
+nnoremap taq :tabclose<CR>
+
+
+"
+" PLUGINS
+"
 call plug#begin('~/.vim/plugged')
-"Auto complete
 
+Plug 'scrooloose/nerdtree' " Filesystem tree
+Plug 'Townk/vim-autoclose' " Autclose brackets
+
+"Auto complete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-clang'
 Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'zchee/deoplete-jedi'
 Plug 'zchee/deoplete-zsh'
-
 
 Plug 'Shougo/neoinclude.vim' "also check completion in includes
 
@@ -54,22 +92,17 @@ Plug 'dart-lang/dart-vim-plugin' " Dart completion
 Plug 'sirtaj/vim-openscad' " openscad
 
 "Behavior
-Plug 'Townk/vim-autoclose' "autclose brackets
 Plug 'tpope/vim-surround' "Sourounding
 Plug 'honza/vim-snippets' "snippets engine
 Plug 'SirVer/ultisnips' "sippets
 
 "Tools
 Plug 'ervandew/supertab'
-Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf.vim'
 Plug 'ntpeters/vim-better-whitespace' "show when there is gross trailing whitespace
 Plug 'tpope/vim-repeat' "repeat last command from plugin
 Plug 'tpope/vim-commentary' "Comment shortcut
 Plug 'KabbAmine/vCoolor.vim' " color picker
-
-" Plug 'iago-lito/vim-visualMarks' "breaks '<<' indent
-" Plug 'terryma/vim-multiple-cursors' " Multiple Cursors
 
 "Looks
 Plug 'luochen1990/rainbow' "rainbow highlight brackets
@@ -82,36 +115,59 @@ Plug 'kovetskiy/sxhkd-vim'
 Plug 'LnL7/vim-nix' "nix vim syntax
 
 "Themes
-Plug 'chriskempson/base16-vim'
 Plug 'kaicataldo/material.vim'
-Plug 'phanviet/vim-monokai-pro'
 
 "Fancy
-" Plug 'aurieh/discord.nvim', { 'do': ':UpdateRemotePlugins'}
-" Plug 'anned20/vimsence' "discord
 Plug 'mhinz/vim-startify' "A nice start menu
 Plug 'vim-scripts/Color-Scheme-Explorer'
 
 "Plug 'ryanoasis/vim-devicons' "Icons should always be last plugin
 call plug#end()
 
-syntax enable
-colorscheme monokai_pro
-
 tnoremap <Esc> <C-\><C-n>
+
+"
+"Colors
+"
+set t_Co=256
+set background=dark
+set termguicolors
+syntax enable
+
+
+"
+" Pilou's dotfiles
+"
+"File settings
+set nobackup		" do not keep a backup file, use versions instead
+set autoread
+set encoding=utf-8
+set fileencoding=utf-8 "write
+set fileencodings=utf-8 "read
+set bomb "unicode header
+set binary "warning disable expandtab if set after
+
+colorscheme material
+
+set number relativenumber
+set numberwidth=1
+
+"set foldmethod=syntax
+"set clipboard=unnamedplus
+set mouse=ni
+
+"Indent settings
+set autoindent                " always set autoindenting on
+set copyindent                " copy Indentation
 
 "Variables
 let mapleader = " "
-
 let g:deoplete#enable_at_startup = 1
 let g:AutoClosePumvisible = {"ENTER": "<C-Y>", "ESC": "<ESC>"} "fix autoclose breaking escape exit autocompletion
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
 
 let g:seiya_auto_enable=1
 " Default value: ['ctermbg']
 let g:seiya_target_groups = has('nvim') ? ['guibg'] : ['ctermbg']
-
 
 let g:multi_cursor_use_default_mapping=0
 
@@ -125,20 +181,10 @@ let g:multi_cursor_use_default_mapping=0
 " let g:multi_cursor_skip_key            = '<C-x>'
 " let g:multi_cursor_quit_key            = '<Esc>'
 
-"Shortcuts
-noremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-_> :noh<CR>
 nnoremap <C-ç> :set hlsearch!<CR>
 nnoremap Q <nop> "Disable annoying EX mode
-let g:SuperTabDefaultCompletionType = "<c-n>"
 
-"tab nav with shift
-nnoremap <C-j> gT
-nnoremap <C-k> gt
-nnoremap <C-h> :tabm -1<CR>
-nnoremap <C-l> :tabm +1<CR>
-nnoremap tn :tabnew<CR>
-nnoremap tq :tabclose<CR>
 "splits
 nnoremap <A-h> <C-w>h
 nnoremap <A-j> <C-w>j
@@ -168,3 +214,4 @@ augroup Binary
     au BufWritePost *.bin if &bin | %!xxd
     au BufWritePost *.bin set nomod | endif
 augroup END
+
