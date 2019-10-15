@@ -37,12 +37,11 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 "  <CR>/v/t to open in an h-split/v-split/tab
 "  Check |netrw_browse_maps| for more mapping
 
-
 "
 " TAGS
 "
 " Don't forget to create MakeTags files
-command! MakeTags !ctags -R .
+command! TagsUpdate !ctags -R .
 " Ctags help
 " Use ^] to jump to tag under cursor
 " Use g^] for ambiguous tags
@@ -59,37 +58,42 @@ command! MakeTags !ctags -R .
 " ^x^] for tags only
 
 "
-" TAB-NAVIGATION (/w Shift)
+" NAVIGATION
 "
 nnoremap <C-j> gT
 nnoremap <C-k> gt
 nnoremap <C-h> :tabm -1<CR>
 nnoremap <C-l> :tabm +1<CR>
-nnoremap tan :tabnew<CR>
-nnoremap taq :tabclose<CR>
 
+nnoremap tn :tabnew<CR>       " New tab
+nnoremap tq :tabclose<CR>     " Close tab
+
+nnoremap <A-h> <C-w>h         " Buffer@Left
+nnoremap <A-j> <C-w>j         " Buffer@Top
+nnoremap <A-k> <C-w>k         " Buffer@Bottom
+nnoremap <A-l> <C-w>l         " Buffer@Right
 
 "
 " PLUGINS
 "
 call plug#begin('~/.vim/plugged')
-
+"Base
+Plug 'mhinz/vim-startify' "A nice start menu
+Plug 'vim-scripts/Color-Scheme-Explorer'
 Plug 'scrooloose/nerdtree' " Filesystem tree
 Plug 'Townk/vim-autoclose' " Autclose brackets
 
 "Auto complete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-clang'
+Plug 'Shougo/neoinclude.vim' "also check completion in includes
 Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'zchee/deoplete-jedi'
 Plug 'zchee/deoplete-zsh'
-
-Plug 'Shougo/neoinclude.vim' "also check completion in includes
+Plug 'dart-lang/dart-vim-plugin' " Dart completion
 
 Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] , 'do' : 'npm install' }
 Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
-Plug 'dart-lang/dart-vim-plugin' " Dart completion
-Plug 'sirtaj/vim-openscad' " openscad
 
 "Behavior
 Plug 'tpope/vim-surround' "Sourounding
@@ -113,44 +117,47 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'miyakogi/seiya.vim' "background transparent again
 Plug 'kovetskiy/sxhkd-vim'
 Plug 'LnL7/vim-nix' "nix vim syntax
-
-"Themes
-Plug 'kaicataldo/material.vim'
-
-"Fancy
-Plug 'mhinz/vim-startify' "A nice start menu
-Plug 'vim-scripts/Color-Scheme-Explorer'
+Plug 'kaicataldo/material.vim' " material theme
 
 "Plug 'ryanoasis/vim-devicons' "Icons should always be last plugin
 call plug#end()
 
-tnoremap <Esc> <C-\><C-n>
+
 
 "
-"Colors
+" DISCOVERY
 "
+
+"Colors
 set t_Co=256
 set background=dark
 set termguicolors
 syntax enable
 
-
-"
-" Pilou's dotfiles
-"
 "File settings
 set nobackup		" do not keep a backup file, use versions instead
 set autoread
 set encoding=utf-8
-set fileencoding=utf-8 "write
-set fileencodings=utf-8 "read
-set bomb "unicode header
-set binary "warning disable expandtab if set after
+set fileencoding=utf-8  " write
+set fileencodings=utf-8 " read
+set bomb                " unicode header
+set binary              " warning disable expandtab if set after
 
-colorscheme material
-
+"
+" WTF are those?
+"
+tnoremap <Esc> <C-\><C-n>
 set number relativenumber
 set numberwidth=1
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>w :w<cr>
+nnoremap <leader>q :q<cr>
+nnoremap <leader>Q :q!<cr>
+nnoremap <C-_> :noh<CR>
+nnoremap <C-ç> :set hlsearch!<CR>
+nnoremap Q <nop> "Disable annoying EX mode
+
 
 "set foldmethod=syntax
 "set clipboard=unnamedplus
@@ -169,9 +176,8 @@ let g:seiya_auto_enable=1
 " Default value: ['ctermbg']
 let g:seiya_target_groups = has('nvim') ? ['guibg'] : ['ctermbg']
 
-let g:multi_cursor_use_default_mapping=0
-
 " Default mapping
+let g:multi_cursor_use_default_mapping=0
 " let g:multi_cursor_start_word_key      = '<C-b>'
 " let g:multi_cursor_select_all_word_key = '<A-n>'
 " let g:multi_cursor_start_key           = 'g<C-n>'
@@ -180,23 +186,6 @@ let g:multi_cursor_use_default_mapping=0
 " let g:multi_cursor_prev_key            = '<C-p>'
 " let g:multi_cursor_skip_key            = '<C-x>'
 " let g:multi_cursor_quit_key            = '<Esc>'
-
-nnoremap <C-_> :noh<CR>
-nnoremap <C-ç> :set hlsearch!<CR>
-nnoremap Q <nop> "Disable annoying EX mode
-
-"splits
-nnoremap <A-h> <C-w>h
-nnoremap <A-j> <C-w>j
-nnoremap <A-k> <C-w>k
-nnoremap <A-l> <C-w>l
-
-"Quick edit init.vim
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
-nnoremap <leader>w :w<cr>
-nnoremap <leader>q :q<cr>
-nnoremap <leader>Q :q!<cr>
 
 "Augroup
 augroup AutoGroup
@@ -215,3 +204,4 @@ augroup Binary
     au BufWritePost *.bin set nomod | endif
 augroup END
 
+colo material
