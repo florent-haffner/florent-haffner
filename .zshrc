@@ -96,6 +96,8 @@ source $ZSH/oh-my-zsh.sh
 # GIT on ZSH
 autoload -Uz compinit && compinit
 
+alias open="nautilus"
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/nelth/.sdkman"
 [[ -s "/home/nelth/.sdkman/bin/sdkman-init.sh" ]] && source "/home/nelth/.sdkman/bin/sdkman-init.sh"
