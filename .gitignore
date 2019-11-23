@@ -1,28 +1,39 @@
+#
 # Let's exclude everything
+#
 /*
 
-#GLOBAL STYLE & terminal
+# GLOBAL STYLE & terminal
+#
 !/README.md
 !/.Xresources
 !/.xinitrc
+!.zshrc
 
-#MINDBLOWIND TRICKS
+# DEV Stuff
+#
+!/.config/nvim/
+
+# MINDBLOWIND TRICKS
+#
 !/.config
 /.config/*
 !/.gitignore
 
-#BudgieWM
-!.zshrc
+# Design
+#
+!/.icons/
+!/.themes/
 
+#
 #Let's add some cool stuff
+#
 !/.config/compton.conf
 !/.config/i3/
 !/.config/polybar/
 !/.config/rofi/
 !/.config/ranger/
 !/.config/redshift.sh
-!/.config/install.sh
 
-#DEV Stuff
-!/.config/nvim/
+!/.config/install.sh
 
