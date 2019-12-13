@@ -102,9 +102,6 @@ alias open="nautilus"
 export SDKMAN_DIR="/home/nelth/.sdkman"
 [[ -s "/home/nelth/.sdkman/bin/sdkman-init.sh" ]] && source "/home/nelth/.sdkman/bin/sdkman-init.sh"
 
-# Emacs doom bin
-export PATH=~/.emacs.d/bin:$PATH
-
 # Exporting ~/.local/bin
 export PATH=~/.local/bin:$PATH
 
