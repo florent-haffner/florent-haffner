@@ -9,6 +9,7 @@
 !/.Xresources
 !/.xinitrc
 !.zshrc
+!/server.sh
 
 # DEV Stuff
 #
@@ -34,6 +35,4 @@
 !/.config/rofi/
 !/.config/ranger/
 !/.config/redshift.sh
-
-!/.config/install.sh
 
