@@ -10,6 +10,7 @@
 !/.xinitrc
 !.zshrc
 !/server.sh
+!/vps.sh
 
 # DEV Stuff
 #
@@ -20,11 +21,6 @@
 !/.config
 /.config/*
 !/.gitignore
-
-# Design
-#
-!/.icons/
-!/.themes/
 
 #
 #Let's add some cool stuff
