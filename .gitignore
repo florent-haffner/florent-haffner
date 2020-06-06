@@ -6,11 +6,12 @@
 # GLOBAL STYLE & terminal
 #
 !/README.md
-!/.Xresources
-!/.xinitrc
+!/.Xresources.tmp
+!/.xinitrc.tmp
 !.zshrc
-!/server.sh
-!/vps.sh
+!/0-base.sh
+!/1-ssh.sh
+!/2-server.sh
 
 # DEV Stuff
 #
