@@ -12,6 +12,7 @@
 !/0-base.sh
 !/1-ssh.sh
 !/2-server.sh
+!/3-vim.sh
 
 # DEV Stuff
 #
