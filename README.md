@@ -7,6 +7,7 @@ This is my current $HOME configuration.
 ## git
 
 git config --global user.email "florent.haffner@protonmail.com"
+
 git config --global user.name "florent.haffner"
 
 ## Update kernel
