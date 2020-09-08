@@ -12,9 +12,11 @@ The folowing command solve the problem :  https://forum.manjaro.org/t/usb-3-not-
  
 > `sudo sed 's/^GRUB_CMDLINE_LINUX_DEFAULT=\".*[^"]/& amd_iommu=on iommu=pt/g' -i /etc/default/grub && sudo update-grub`
 
-## GPU Info
+## GPU
 
-From : https://askubuntu.com/questions/5417/how-to-get-the-gpu-info
+Infos : https://askubuntu.com/questions/5417/how-to-get-the-gpu-info
 
 > `glxinfo | egrep -i 'device|memory'`
+
+CUDA installation : https://leblancfg.com/installing-cuda-cudnn-tensorflow-nvidia-gtx960.html
 
