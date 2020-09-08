@@ -16,13 +16,13 @@ The problem is to load all USB during boot. The soundcard isn't showing on cold 
  
 The folowing command solve the problem :  https://forum.manjaro.org/t/usb-3-not-showing-up-in-lsusb/116383/4
  
-> `sudo sed 's/^GRUB_CMDLINE_LINUX_DEFAULT=\".*[^"]/& amd_iommu=on iommu=pt/g' -i /etc/default/grub && sudo update-grub`
+`sudo sed 's/^GRUB_CMDLINE_LINUX_DEFAULT=\".*[^"]/& amd_iommu=on iommu=pt/g' -i /etc/default/grub && sudo update-grub`
 
 ## GPU
 
 Infos : https://askubuntu.com/questions/5417/how-to-get-the-gpu-info
 
-> `glxinfo | egrep -i 'device|memory'`
+`glxinfo | egrep -i 'device|memory'`
 
 CUDA installation : https://leblancfg.com/installing-cuda-cudnn-tensorflow-nvidia-gtx960.html
 
