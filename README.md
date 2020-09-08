@@ -4,6 +4,12 @@ This is my current $HOME configuration.
 
 > The shell script are used to simplify getting an environment fatsly up and running.
 
+## git
+
+`git config --global user.email "florent.haffner@protonmail.com"`
+
+`git config --global user.name "florent.haffner"`
+
 ## Update kernel
  
 The problem is to load all USB during boot. The soundcard isn't showing on cold boot.
