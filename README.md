@@ -6,7 +6,7 @@ This is my current $HOME configuration.
 
 ## Git
 
-`git config --global user.email "florent.haffner@protonmail.com" && git config --global user.name "florent.haffner"`
+`git config --global user.email "florent.haffner@protonmail.com" && git config --global user.name "florent-haffner"`
 
 ## GPU
 
