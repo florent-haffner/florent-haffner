@@ -7,5 +7,4 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 #
 # Recursive copy
 #
-cp -r $HOME/dotfiles/.config/nvim ~/.config
-
+cp -r $HOME/dotfiles/.config/nvim ~/.config/nvim
