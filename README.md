@@ -22,3 +22,6 @@ Infos : https://askubuntu.com/questions/5417/how-to-get-the-gpu-info
 
 CUDA installation : https://leblancfg.com/installing-cuda-cudnn-tensorflow-nvidia-gtx960.html
 
+## Mac - Keyboard on VSCode
+
+Solution : https://stackoverflow.com/questions/39972335/how-do-i-press-and-hold-a-key-and-have-it-repeat-in-vscode
