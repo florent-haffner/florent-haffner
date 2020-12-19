@@ -8,6 +8,8 @@ This is my current $HOME configuration.
 
 `git config --global user.email "florent.haffner@protonmail.com" && git config --global user.name "florent-haffner"`
 
+`export EDITOR=vim`
+
 ## Network
 
 > Local `ip route get 1.2.3.4 | awk '{print $7}'`
