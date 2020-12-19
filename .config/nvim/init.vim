@@ -85,15 +85,15 @@ Plug 'Townk/vim-autoclose' " Autclose brackets
 
 "Auto complete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-clang'
-Plug 'Shougo/neoinclude.vim' "also check completion in includes
-Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
-Plug 'zchee/deoplete-jedi'
-Plug 'zchee/deoplete-zsh'
-Plug 'dart-lang/dart-vim-plugin' " Dart completion
+"Plug 'zchee/deoplete-clang'
+"Plug 'Shougo/neoinclude.vim' "also check completion in includes
+"Plug 'carlitux/deoplete-ternjs', { 'for': ['javascript', 'javascript.jsx'] }
+"Plug 'zchee/deoplete-jedi'
+"Plug 'zchee/deoplete-zsh'
+"Plug 'dart-lang/dart-vim-plugin' " Dart completion
 
-Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] , 'do' : 'npm install' }
-Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
+"Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'] , 'do' : 'npm install' }
+"Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 
 "Behavior
 Plug 'tpope/vim-surround' "Sourounding
