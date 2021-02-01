@@ -10,6 +10,10 @@ This is my current $HOME configuration.
 
 `export EDITOR=vim`
 
+## PM : Update and cleaning
+
+> Mac : `brew upgrade --cask && brew cleanup`
+
 ## Network
 
 > Local `ip route get 1.2.3.4 | awk '{print $7}'`
