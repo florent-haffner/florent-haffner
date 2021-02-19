@@ -20,13 +20,17 @@ This is my current $HOME configuration.
 
 > External `curl ifconfig.me`
 
+## Storage
+
+`sudo hdparm -Y -S 36 /dev/sdb`
+
 ## GPU
 
 Infos : https://askubuntu.com/questions/5417/how-to-get-the-gpu-info
 
 `glxinfo | egrep -i 'device|memory'`
 
-CUDA installation : https://leblancfg.com/installing-cuda-cudnn-tensorflow-nvidia-gtx960.html
+CUDA installation : https://motorscript.com/install-tensorflow-arch-linux-cuda-cudnn/
 
 ## Mac - Keyboard on VSCode
 
