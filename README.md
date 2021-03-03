@@ -12,7 +12,7 @@ This is my current $HOME configuration.
 
 ## PM : Update and cleaning
 
-> Mac : `brew upgrade --cask && brew cleanup`
+> Mac : `brew update && brew upgrade & brew upgrade --cask & brew cleanup`
 
 ## Network
 
