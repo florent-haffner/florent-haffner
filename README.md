@@ -4,6 +4,14 @@ This is my current $HOME configuration.
 
 > The shell script are used to fastly get an environment up and running.
 
+## Zsh
+
+`yay -s zsh`
+
+`sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+
+`git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+
 ## Git
 
 `git config --global user.email "florent.haffner@protonmail.com" && git config --global user.name "florent-haffner"`
@@ -13,6 +21,8 @@ This is my current $HOME configuration.
 ## PM : Update and cleaning
 
 > Mac : `brew update && brew upgrade && brew upgrade --cask && brew cleanup`
+
+> Linux : `yay -Syu && yay -Rs $(yay -Qqtd)`
 
 ## Network
 
