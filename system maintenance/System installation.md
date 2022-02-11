@@ -24,3 +24,9 @@ Manjaro - /w proprietary driver
     git config --global user.email "florent.haffner@protonmail.com" && git config --global user.name "florent-haffner"
 
     export EDITOR=vim
+
+### Virtualization
+    
+    sudo pacmans -S docker docker-compose
+    
+    sudo usermod -aG docker $USER
