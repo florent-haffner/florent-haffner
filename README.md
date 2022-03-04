@@ -33,13 +33,16 @@ sudo hdparm -Y -S 36 /dev/sdb
 
 ## GPU
 
-Infos : https://askubuntu.com/questions/5417/how-to-get-the-gpu-info
+> Infos : https://askubuntu.com/questions/5417/how-to-get-the-gpu-info
 
 ```
 glxinfo | egrep -i 'device|memory'
 ```
 
-> CUDA installation : https://motorscript.com/install-tensorflow-arch-linux-cuda-cudnn/
+Installation 2022 - [The ultimate guide - TF /w GPU 2022](https://ramseyelbasheer.io/2022/01/20/the-ultimate-tensorflow-gpu-installation-guide-for-2022-and-beyond/)
+- [Tensorflow - Installation with GPU](https://www.tensorflow.org/install/source#gpu)
+- [Cuda 11.6](https://archlinux.org/packages/community/x86_64/cuda/)
+- [cudnn 8.3](https://archlinux.org/packages/community/x86_64/cudnn/)
 
 
 ## Mac - Keyboard on VSCode
