@@ -30,3 +30,7 @@ Manjaro - /w proprietary driver
     sudo pacmans -S docker docker-compose
     
     sudo usermod -aG docker $USER
+
+## Fonts & emoji
+- Fonts -> `yay -Syu noto-fonts`
+- [Apple emoji](https://aur.archlinux.org/packages/ttf-apple-emoji)
