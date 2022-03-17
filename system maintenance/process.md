@@ -2,7 +2,7 @@
 
 ## Base + utils
 ```
-sudo pacman -S cmake clang tilix zsh yay vim nautilus
+sudo pacman -S cmake clang tilix patch make zsh yay vim nautilus
 ```
 
 ```
@@ -20,5 +20,7 @@ curl -s "https://get.sdkman.io" | bash
 ```
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
-yay -S plank spotify easyeffects snap
+yay -S plank spotify easyeffects snap vscode
 ```
+
+[Conda installation](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
