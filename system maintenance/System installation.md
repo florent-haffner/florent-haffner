@@ -2,7 +2,7 @@
 
 ## Linux - Base + utils
 ```bash
-sudo pacman -S cmake clang tilix patch make zsh yay vim nautilus
+sudo pacman -S make cmake gcc clang tilix patch zsh yay vim nautilus
 ```
 
 ```bash
