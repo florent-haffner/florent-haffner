@@ -1,35 +1,51 @@
 # System installation
 
-## Base
+## Linux - Base + utils
+```bash
+sudo pacman -S cmake clang tilix patch make zsh yay vim nautilus
+```
 
-Manjaro - /w proprietary driver
+```bash
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+```bash
+curl -s "https://get.sdkman.io" | bash
+```
+
+[Conda installation](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
 
 
-## Procedure
+## Comfort
+```bash
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
 
-    # ohmyzsh -> https://ohmyz.sh/
-    
-    sudo pacman -Syu yay htop nvtop vim tilix nautilus fakeroot
-    
-    # Install miniconda
-    # Cat .bashrc -> .zshrc
-    
-    yay -Syu ulauncher plank jetbrains-toolbox spotify signal discord code
+```bash
+git config --global user.email "your_email@example.com" && git config --global user.name "name.name"
+```
+
+```bash
+sudo pacman -Syu yay htop nvtop vim tilix nautilus fakeroot
+
+yay -S plank spotify easyeffects snap vscode ulauncher jetbrains-toolbox signal discord
+```
+
+```bash
+export EDITOR=vim
+```
 
 
-### Git
-
-    ssh-keygen -t rsa -b 4096 -C "florent.haffner@protonmail.com"
-    
-    git config --global user.email "florent.haffner@protonmail.com" && git config --global user.name "florent-haffner"
-
-    export EDITOR=vim
-
+---
 ### Virtualization
+```bash    
+sudo pacmans -S docker docker-compose
     
-    sudo pacmans -S docker docker-compose
-    
-    sudo usermod -aG docker $USER
+sudo usermod -aG docker $USER
+```
+
 
 ## Fonts & emoji
 - Fonts -> `yay -Syu noto-fonts`
