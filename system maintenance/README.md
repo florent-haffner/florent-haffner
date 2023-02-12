@@ -16,7 +16,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 Arch Linux
 ```
-yay -Syu && yay -Rs $(yay -Qqtd)
+# Update PM && removed orphans && clean packages cache
+yay -Syu && yay -Rs $(yay -Qqtd) && paccache -rk1
 ```
 
 
