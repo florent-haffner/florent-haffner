@@ -47,6 +47,7 @@ sudo usermod -aG docker $USER
 ```
 
 
-## Fonts & emoji
+## Office, fonts & emoji
 - Fonts -> `yay -Syu noto-fonts`
 - [Apple emoji](https://aur.archlinux.org/packages/ttf-apple-emoji)
+- [LanguageTool - Grammar check](https://languagetool.org/)
