@@ -27,6 +27,10 @@ git config --global user.email "your_email@example.com" && git config --global u
 export EDITOR=vim
 ```
 
+```bash
+sudo setfacl -R -m "u:rslsync:rwx" /home/your-username
+```
+
 ---
 ## GPU
 [Nvidia properietary drivers for Fedora](https://www.reddit.com/r/Fedora/comments/usnu0x/fedora_36_nvidia_drivers_cuda_and_tensorflow_what/)
