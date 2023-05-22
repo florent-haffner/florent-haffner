@@ -11,11 +11,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-```bash
-curl -s "https://get.sdkman.io" | bash
-```
-
-[Conda installation](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
+[MiniConda installation](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
 
 
 ## Comfort
@@ -28,24 +24,33 @@ git config --global user.email "your_email@example.com" && git config --global u
 ```
 
 ```bash
+export EDITOR=vim
+```
+
+---
+## GPU
+[Nvidia properietary drivers for Fedora](https://www.reddit.com/r/Fedora/comments/usnu0x/fedora_36_nvidia_drivers_cuda_and_tensorflow_what/)
+
+```bash
+sudo dnf install akmod-nvidia
+sudo dnf install xorg-x11-drv-nvidia-cuda
+```
+
+---
+# TO UPDATE - Switch from Arch-linux to Fedora (2023-04)
+### Utilities
+```bash
 sudo pacman -Syu yay htop nvtop vim tilix nautilus fakeroot
 
 yay -S plank spotify easyeffects snap vscode ulauncher jetbrains-toolbox signal discord
 ```
 
-```bash
-export EDITOR=vim
-```
-
-
----
 ### Virtualization
 ```bash    
 sudo pacmans -S docker docker-compose
     
 sudo usermod -aG docker $USER
 ```
-
 
 ## Office, fonts & emoji
 - Fonts -> `yay -Syu noto-fonts`

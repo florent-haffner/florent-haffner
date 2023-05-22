@@ -12,15 +12,12 @@ External
 curl ifconfig.me
 ```
 
+# TO UPDATE (not useful since switch from Archlinux to Fedora - 2023-04)
 ## Package management & dependency
-
 ```
 # Package information
 yay -Qi {packageName}
 ```
-
-
-## Conflict and resolution
 
 [https://forum.manjaro.org/t/switching-from-pipewire-media-session-to-wireplumber-pamac-tries-to-remove-plasma/90531](https://forum.manjaro.org/t/switching-from-pipewire-media-session-to-wireplumber-pamac-tries-to-remove-plasma/90531) 
 
@@ -33,7 +30,6 @@ sudo pacman -Syu --ignore=vlc
 
 
 ## Cleaning system
-
 [https://averagelinuxuser.com/clean-arch-linux/](https://averagelinuxuser.com/clean-arch-linux/) 
 
 > ncdu : Client to see the largest files and directories
@@ -45,7 +41,6 @@ sudo pacman -Syu --ignore=vlc
     *   [reddit /r/archlinux/comments/bs3riy/remove\_orphan\_packages/](https://www.reddit.com/r/archlinux/comments/bs3riy/remove_orphan_packages/) 
         *   [Wiki - Pacman - Removing\_unused\_packages\_(orphans)](https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#Removing_unused_packages_(orphans)) 
         *   [WIKI - AUR - Orphan](https://wiki.archlinux.org/title/Arch_User_Repository#Orphan) 
-
 
 ## Printer & scanner
 
