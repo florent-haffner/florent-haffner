@@ -35,6 +35,8 @@ sudo setfacl -R -m "u:rslsync:rwx" /home/your-username
 ## GPU
 [Nvidia properietary drivers for Fedora](https://www.reddit.com/r/Fedora/comments/usnu0x/fedora_36_nvidia_drivers_cuda_and_tensorflow_what/)
 
+[Installing Cuda toolkit 11.2 - Fedora](https://www.if-not-true-then-false.com/2018/install-nvidia-cuda-toolkit-on-fedora/#16-make-sure-that-you-system-is-up-to-date-and-you-are-running-latest-kernel)
+
 ```bash
 sudo dnf install akmod-nvidia
 sudo dnf install xorg-x11-drv-nvidia-cuda
