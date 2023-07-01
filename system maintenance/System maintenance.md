@@ -22,10 +22,11 @@ yay -Qi {packageName}
 [https://forum.manjaro.org/t/switching-from-pipewire-media-session-to-wireplumber-pamac-tries-to-remove-plasma/90531](https://forum.manjaro.org/t/switching-from-pipewire-media-session-to-wireplumber-pamac-tries-to-remove-plasma/90531) 
 
 ```
+# To update
 pamac remove --unneeded pipewire-media-session
 
-# Ignore temporarily
-sudo pacman -Syu --ignore=vlc
+# Ignore temporarily - Linked package will automatically be ignored
+sudo dnf update --exclude="xorg-x11-drv-nvidia xorg-x11-drv-nvidia-cuda"
 ```
 
 
