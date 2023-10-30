@@ -1,10 +1,9 @@
 Hello ✌️ My name is Florent HAFFNER.
 
-I am a PhD student in Digital Signal and Image Processing. I'm working at [IFP Energies nouvelles](https://www.ifpenergiesnouvelles.com/) while studying at [CentraleSupelec | Université de Paris-Saclay](https://www.universite-paris-saclay.fr/en) 🤓
+I am a PhD student in Digital Signal and Image Processing. I'm working at [IFP Energies nouvelles](https://www.ifpenergiesnouvelles.com/) 🤓
 
-I use GitHub mainly as a home to link and manage my information system. Most of my repositories are private, so there's no glitter, but I can assure you they are minimalist. Also, since I tasted Serverless AWS+DevOps culture from 2020 to 2022, I keep things as simple and efficient as possible. 
-
-Maybe I'll host other projects here again if there's a need to make them public (probably because of a research paper).
+I use GitHub mainly as a home for linking and managing my information system, so most of my repositories are private. 
+However, I will publicly host my paper-related research projects.
 
 
 <!--
