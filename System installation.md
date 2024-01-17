@@ -1,10 +1,6 @@
 # System installation
 
-## Linux - Base + utils
-```bash
-sudo pacman -S make cmake gcc clang tilix patch zsh yay vim nautilus
-```
-
+## Work & terminal utils
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -31,34 +27,18 @@ export EDITOR=vim
 sudo setfacl -R -m "u:rslsync:rwx" /home/your-username
 ```
 
----
-## GPU
-[Nvidia properietary drivers for Fedora](https://www.reddit.com/r/Fedora/comments/usnu0x/fedora_36_nvidia_drivers_cuda_and_tensorflow_what/)
-
-[Installing Cuda toolkit 11.2 - Fedora](https://www.if-not-true-then-false.com/2018/install-nvidia-cuda-toolkit-on-fedora/#16-make-sure-that-you-system-is-up-to-date-and-you-are-running-latest-kernel)
-
-```bash
-sudo dnf install akmod-nvidia
-sudo dnf install xorg-x11-drv-nvidia-cuda
-```
 
 ---
-# TO UPDATE - Switch from Arch-linux to Fedora (2023-04)
+## Tools
 ### Utilities
 ```bash
-sudo pacman -Syu yay htop nvtop vim tilix nautilus fakeroot
+htop nvtop vim tilix nautilus
 
-yay -S plank spotify easyeffects snap vscode ulauncher jetbrains-toolbox signal discord
+spotify easyeffects snap vscode jetbrains-toolbox signal discord
 ```
 
-### Virtualization
-```bash    
-sudo pacmans -S docker docker-compose
-    
-sudo usermod -aG docker $USER
-```
-
-## Office, fonts & emoji
-- Fonts -> `yay -Syu noto-fonts`
-- [Apple emoji](https://aur.archlinux.org/packages/ttf-apple-emoji)
+### Office and other things
 - [LanguageTool - Grammar check](https://languagetool.org/)
+- atop: a lot of stuff for monitoring the desktop
+- powertop: useful for power consumption (C1 and all)...
+
