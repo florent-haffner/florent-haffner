@@ -1,22 +1,29 @@
-Hello ✌️ My name is Florent HAFFNER.
+# Dotfiles
 
-I am a PhD student in Digital Signal and Image Processing. I'm working at [IFP Energies nouvelles](https://www.ifpenergiesnouvelles.com/) 🤓
+This is a repository to help with system configuration and maintenance.
 
-I use GitHub mainly as a home for linking and managing my information system, so most of my repositories are private. 
-However, I will publicly host my paper-related research projects.
+## Zsh
 
+```
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-<!--
-**florent-haffner/florent-haffner** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
 
-Here are some ideas to get you started:
+## Storage
+```
+sudo hdparm -Y -S 36 /dev/sdb
+```
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## GPU info
+> Source : https://askubuntu.com/questions/5417/how-to-get-the-gpu-info
+```
+glxinfo | egrep -i 'device|memory'
+```
+
+---
+## PM : Update and cleaning (Old config with Archlinux)
+```
+# Update PM && removed orphans && clean packages cache
+yay -Syu && yay -Rs $(yay -Qqtd) && paccache -rk1
+```
