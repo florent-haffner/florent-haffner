@@ -1,13 +1,18 @@
 # System installation
 
 ## Work & terminal utils
+Necessary tools
+```bash
+htop nvtop vim tilix nautilus snap
+```
+
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
-
 [MiniConda installation](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
+
 
 
 ## Comfort
@@ -36,6 +41,9 @@ Give the group read/write access to specific directory.
 sudo chmod -R g+rwx /home/your-username
 ```
 
+> Then use gparted settings to mount disk on startup.
+
+
 ## Qemu
 Setup VM W11
 - CPU topology : 1 socket, 8 cores, 2 threads
@@ -43,23 +51,15 @@ Setup VM W11
 - [Virtio windows drivers/utilities](https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md) -> [Latest virtio-win-guest-tools.exe](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/virtio-win-guest-tools.exe)
 
 
-
----
-## Tools
-### Utilities
-```bash
-htop nvtop vim tilix nautilus
-
-spotify easyeffects snap vscode jetbrains-toolbox signal discord
-```
-
-### Office and other things
+## Other tools
+- spotify easyeffects vscode jetbrains-toolbox signal discord
 - [LanguageTool - Grammar check](https://languagetool.org/)
 - atop: a lot of stuff for monitoring the desktop
 - powertop: useful for power consumption (C1 and all)...
 
----
 
+
+---
 # Maintenance 
 ## Storage
 ```
