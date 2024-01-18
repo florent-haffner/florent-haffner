@@ -28,20 +28,13 @@ git config --global user.email "your_email@example.com" && git config --global u
 export EDITOR=vim
 ```
 
-## Resilio-sync
-Setup a group for two users (resilio & current user).
+## Resilio
+[Run Resilio as current user](https://frkd.dev/posts/2021-03-01-resilio-sync-linux-user/)
+
+Mount disk as current user
 ```bash
-sudo groupadd directories-sync
-
-sudo usermod -a -G directories-sync your-username && sudo usermod -a -G directories-sync rslsync
+udisksctl mount -b /dev/disk/by-label/xxx
 ```
-
-Give the group read/write access to specific directory.
-```bash
-sudo chmod -R g+rwx /home/your-username
-```
-
-> Then use gparted settings to mount disk on startup.
 
 
 ## Qemu
