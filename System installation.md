@@ -23,11 +23,23 @@ git config --global user.email "your_email@example.com" && git config --global u
 export EDITOR=vim
 ```
 
+## Resilio-sync
+Setup a group for two users (resilio & current user).
 ```bash
-sudo setfacl -R -m "u:rslsync:rwx" /home/your-username
+sudo groupadd directories-sync
+
+sudo usermod -a -G directories-sync your-username && sudo usermod -a -G directories-sync rslsync
 ```
 
-## Qemu - W11 guest tools
+Give the group read/write access to specific directory.
+```bash
+sudo chmod -R g+rwx /home/your-username
+```
+
+## Qemu
+Setup VM W11
+- CPU topology : 1 socket, 8 cores, 2 threads
+- Ram allocation : 16384 Mib
 - [Virtio windows drivers/utilities](https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md) -> [Latest virtio-win-guest-tools.exe](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/virtio-win-guest-tools.exe)
 
 
