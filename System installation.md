@@ -42,3 +42,16 @@ spotify easyeffects snap vscode jetbrains-toolbox signal discord
 - atop: a lot of stuff for monitoring the desktop
 - powertop: useful for power consumption (C1 and all)...
 
+---
+
+# Maintenance 
+## Storage
+```
+sudo hdparm -Y -S 36 /dev/sdb
+```
+
+## GPU info
+> Source : https://askubuntu.com/questions/5417/how-to-get-the-gpu-info
+```
+glxinfo | egrep -i 'device|memory'
+```
