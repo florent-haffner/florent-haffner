@@ -36,6 +36,13 @@ Mount disk as current user
 udisksctl mount -b /dev/disk/by-label/xxx
 ```
 
+## Grub fix timeout
+> sudo vim /etc/default/grub
+```bash
+GRUB_RECORDFAIL_TIMEOUT=3 # Supposed to help with timeout 30s->3s
+```
+sudo update-grub
+
 
 ## Qemu
 Setup VM W11
@@ -47,8 +54,6 @@ Setup VM W11
 ## Other tools
 - spotify easyeffects vscode jetbrains-toolbox signal discord
 - [LanguageTool - Grammar check](https://languagetool.org/)
-- atop: a lot of stuff for monitoring the desktop
-- powertop: useful for power consumption (C1 and all)...
 
 
 
