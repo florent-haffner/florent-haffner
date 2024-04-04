@@ -51,6 +51,13 @@ Setup VM W11
 - [Virtio windows drivers/utilities](https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md) -> [Latest virtio-win-guest-tools.exe](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/virtio-win-guest-tools.exe)
 
 
+## SMD share
+/etc/hosts
+
+# Local network host
+localadress hostname
+
+
 ## Other tools
 - spotify easyeffects vscode jetbrains-toolbox signal discord
 - [LanguageTool - Grammar check](https://languagetool.org/)
