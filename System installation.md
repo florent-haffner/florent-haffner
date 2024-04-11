@@ -56,7 +56,7 @@ Setup VM W11
 
 # Local network host
 localadress hostname
-
+https://atlassc.net/2021/08/10/mount-synology-with-cifs-utils-on-ubuntu/
 
 ## Other tools
 - spotify easyeffects vscode jetbrains-toolbox signal discord
