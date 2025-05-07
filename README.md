@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Florent HAFFNER</h1>
-<h3 align="center">I'm a PhD student in deep learning applied to analytical chemistry.</h3>
+<h3 align="center">I'm a last year PhD student in Digital Signal & Image Processing at IFP Energies Nouvelles</h3>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
