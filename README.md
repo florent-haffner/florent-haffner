@@ -1,13 +1,12 @@
 <h1 align="center">Hi 👋, I'm Florent HAFFNER</h1>
 <p align="left">PhD-level ML Research Engineer with 5 years of experience in deep learning, scientific ML, and deploying production-grade AI systems in industrial environments. </p>
-<p align="left">Expert in CNNs, transformers, UQ, and explainability, with strong experience building AWS-based ML pipelines and GPU-accelerated DL models. </p>
+<p align="left">Expert in CNNs, transformers, uncertainty quantification, and explainable AI, with strong experience building AWS-based ML pipelines and GPU-accelerated DL models. </p>
 <p align="left">Actively engaged in modern AI trends including Reinforcement Learning, LLMs and agentic AI, and effective at collaborating across scientific and engineering domains. </p>
 
 <p align="left">
   <strong style="color:DodgerBlue;">Technical Focus:</strong>
   Deep Learning • Representation Learning • Transformers • UQ • XAI • MLOps • AWS
 </p>
-![](https://komarev.com/ghpvc/?username=florent-haffner&color=blue)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
