@@ -1,28 +1,29 @@
-<h1 align="center">Hi 👋, I'm Florent HAFFNER</h1>
-<p align="left">PhD-level ML Research Engineer with 5 years of experience in deep learning, scientific ML, and deploying production-grade AI systems in industrial environments. </p>
-<p align="left">Expert in CNNs, transformers, uncertainty quantification, and explainable AI, with strong experience building AWS-based ML pipelines and GPU-accelerated DL models. </p>
-<p align="left">Actively engaged in modern AI trends including Reinforcement Learning, LLMs and agentic AI, and effective at collaborating across scientific and engineering domains. </p>
+# Florent Haffner, PhD
 
-<p align="left">
-  <strong style="color:DodgerBlue;">Technical Focus:</strong>
-  Deep Learning • Representation Learning • Transformers • UQ • XAI • MLOps • AWS
-</p>
+**Research Engineer — LLM Reliability & Agentic AI** · Geneva, Switzerland
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/florent-haffner-ml" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="florent-haffner-ml" height="30" width="40" /></a>
-</p>
+I build machine learning systems that hold up outside the notebook: grounded, evaluated, and auditable.
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left">
-  <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> 
-  <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer">  <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> 
-  <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> 
-  <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> 
-  <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> 
-  <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> 
-  <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
-  <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> 
-  <a href="https://www.scala-lang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/scala/scala-original.svg" alt="scala" width="40" height="40"/> </a> 
-  <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a>  
-</p>
+- 🔭 **Now** — Research Engineer at [IoT Lab](https://iotlab.com) (Geneva) on the EU-funded project **TRUST** ([Grant 101299091](https://doi.org/10.3030/101299091)): trustworthy LLM and agentic RAG architectures for GDPR compliance in European SMEs — factual grounding, hallucination mitigation, evaluation, human feedback.
+- 🎓 **PhD** — CentraleSupélec / Université Paris-Saclay, prepared at IFP Energies nouvelles (2022–2025): deep learning for near-infrared spectroscopy and time series, uncertainty quantification under distribution shift, explainable AI.
+- 🏭 **Before** — Data Scientist / ML Engineer at Arkema: forecasting and anomaly detection on industrial IoT data, production pipelines on AWS.
+
+## Research
+
+| Year | Work | Code |
+| --- | --- | --- |
+| 2025 | **IPA: A deep CNN based on Inception for Petroleum Analysis** — *Fuel* (Elsevier), 379, 133016 · [DOI](https://doi.org/10.1016/j.fuel.2024.133016) | [inception-pretroleum-analysis](https://github.com/florent-haffner/inception-pretroleum-analysis) |
+| 2025 | **Illuminating the black-box: an explainability study (XAI) of a deep CNN for NIR spectroscopy** — preprint · ENBIS Spring Meeting 2025 | [Illuminating-black-box-cnn-nir](https://github.com/florent-haffner/Illuminating-black-box-cnn-nir) |
+
+Full list on [ORCID](https://orcid.org/0000-0002-0798-4431) · [Google Scholar](https://scholar.google.com/citations?user=-iCUnpcAAAAJ)
+
+## Focus
+
+**Reliable AI** — evaluation, uncertainty quantification, XAI (Grad-CAM, SHAP), RLHF  
+**Agentic AI** — RAG, LangChain, knowledge graphs (Neo4j)  
+**Production ML** — MLOps, MLflow, Docker, AWS (SageMaker, Lambda, Step Functions), PySpark, CUDA  
+**Deep learning** — PyTorch, TensorFlow, CNNs, Transformers, representation learning
+
+## Contact
+
+[LinkedIn](https://www.linkedin.com/in/florent-haffner-ml) · [ORCID](https://orcid.org/0000-0002-0798-4431)
